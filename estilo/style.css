@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: rgb(175,103,233);
-    background: linear-gradient(180deg, rgba(175,103,233,1) 15%, rgba(101,101,231,1) 70%);
+    background: rgb(175, 103, 233);
+    background: linear-gradient(180deg, rgba(175, 103, 233, 1) 15%, rgba(101, 101, 231, 1) 70%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -35,43 +36,28 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-    body, .question {
+
+    body,
+    .questao {
         font-size: 0.70rem;
     }
+
     .container {
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .img-container {
         display: none;
     }
-    .faq-container h1 {
+
+    .FAQ-container h1 {
         text-align: center;
     }
 }
 
-@media screen and (min-width: 751px) {
-    div.faq-container {
-        width: 50%;
-    }
-}
-
-.container{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-container {
-    display: none;
-}
-
-.FAQ-container {
-    text-align: center;
-}
 
 @media screen and (min-width: 751px) {
     div.FAQ-container {
@@ -83,3 +69,75 @@ hr {
     border-top: 1px solid hsl(240, 5%, 91%);
 }
 
+.img-container {
+    width: 40%;
+    margin: 5%;
+}
+
+.box {
+    position: absolute;
+    top: 290px;
+    left: 100px;
+    z-index: 10;
+}
+
+.mulher {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.padrao {
+    position: absolute;
+    width: 50%;
+    top: -20px;
+    left: -70px;
+}
+
+/*FAQ*/
+
+.FAQ-container {
+    width: 80%;
+    margin: 5%;
+}
+
+.questao {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.8;
+}
+
+.questao p,
+.oculto {
+    display: inline-block;
+
+}
+
+.resposta {
+    display: none;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+}
+
+.active {
+    font-weight: 700;
+}
+
+.active .darrow {
+    transform: rotate(180deg);
+}
+
+/*Referências*/
+
+.referencia {
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.referencia {
+    color: hsl(228, 45%, 44%);
+}
